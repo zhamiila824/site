@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glyphicons.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand border-right" href="#">Andrey Sledkov</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle border-right" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Контент
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link border-right" href="#">Фразы <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link border-right" href="#">Ключевики</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link border-right" href="#">Соц сети</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link border-right" href="#">Контакты</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link border-right">
+                <span class="glyphicon glyphicon-user"></span>
+              </a>
+            </li>              
+          </ul>
+        </div>
+      </nav>
+    </header>       
+    <div class="body">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li class="breadcrumb-item"><a href="#">Проекты</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Добавить</li>
+        </ol>
+      </nav>
+      <h3> Добавить проект</h3>
+      <form>
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Категория<span class="red">*</span></label>
+          <div class="col-sm-4">
+            <select class="form-control form-control col-sm-10 vmeste">
+              <option>Выберите из списка</option>
+            </select> 
+            <button class="col-sm-1 vmeste plus"><span class="glyphicon glyphicon-plus"></span></button>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Ссылка<span class="red">*</span></label>
+          <div class="col-sm-4">
+            <input type="url" class="form-control">
+          </div>
+          <small>(Рекомендуется использовать латинские буквы без пробела.<br> Необходима для формирования ссылки на саму страницу)</small>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Ключевые слова</label>
+          <div class="col-sm-4">
+            <select class="form-control form-control col-sm-10 vmeste">
+              <option>Выберите из списка</option>
+            </select>   
+            <button class="col-sm-1 vmeste plus"><span class="glyphicon glyphicon-plus"></span></button>
+          </div>
+          <small>(Мета-данные страницы для поисковых систем)</small>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Хештеги</label>
+          <div class="col-sm-4">
+            <select class="form-control form-control col-sm-10 vmeste">
+              <option>Выберите из списка</option>
+            </select>    
+            <button class="col-sm-1 vmeste plus"><span class="glyphicon glyphicon-plus"></span></button>
+          </div>
+          <small>(Используются для удобной фильтрации проектов.<br> Можно выбрать не более 3 шт.)</small>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Координаты</label>
+          <div class="form-group col-md-2">
+            <label for="inputEmail4">Ширина</label>
+            <input type="number" class="form-control">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputPassword4">Долгота</label>
+            <input type="number" class="form-control">
+          </div>
+          <small>(Используются для обозначения объекта на карте)</small>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Высота</label>
+          <div class="form-group col-md-2">
+            <label>Без постамента</label>
+            <input type="number" class="form-control col-md-8">
+            <select class="form-control form-control-sm col-md-4">
+              <option>M</option>
+            </select> 
+          </div>
+          <div class="form-group col-md-2">
+            <label>С постаментом</label>
+            <input type="number" class="form-control col-md-8">
+            <select class="form-control form-control-sm col-md-4">
+              <option>M</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputDate" class="col-sm-2 col-form-label">Дата открытия</label>
+          <div class="input-group date col-sm-2" data-provide="datepicker">
+            <input type="text" class="form-control">
+            <div class="input-group-addon">
+              <span class="glyphicon glyphicon-th"></span>
+            </div>
+          </div>
+        </div>            
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-pic-tab" data-toggle="tab" href="#nav-pic" role="tab" aria-controls="nav-pic" aria-selected="true">Изображения<span class="red">*</span></a>
+            <a class="nav-item nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="nav-gallery" aria-selected="false">Фотогалерея<span class="red">*</span></a>
+            <a class="nav-item nav-link" id="nav-youtube-tab" data-toggle="tab" href="#nav-youtube" role="tab" aria-controls="nav-youtube" aria-selected="false">YouTube</a>
+            <a class="nav-item nav-link" id="nav-model-tab" data-toggle="tab" href="#nav-model" role="tab" aria-controls="nav-model" aria-selected="false">3D модель</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-pic" role="tabpanel" aria-labelledby="nav-pic-tab">
+            <div class="row">
+              <div class="block1 border-right">
+                <label>Основная фотография проекта</label>
+                <button type="button" class="btn btn-light upload-img">Загрузить</button><br>
+                <img src="images/IMG_4880-05-03-18-07-11.png">
+                <div class="circle">
+                  <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png">
+                </div>
+                <p class="pic-name"> Название.jpg</p>
+                <p class="pic-size">42.50 KB</p>
+              </div>
+              <div class="block2">
+                <label>Миниатюра проекта</label>
+                <button type="button" class="btn btn-light upload-img">Загрузить</button><br>
+                <img src="images/siluet_grozniy.png">
+                <div class="circle">
+                  <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png">
+                </div>
+                <p class="pic-name"> Название.jpg</p>
+                <p class="pic-size">42.50 KB</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-gallery" role="tabpanel" aria-labelledby="nav-gallery-tab">
+            <div class="block3">
+              <label>Загрузить не менее 5 шт. <span class="red">*</span></label>
+              <button type="button" class="btn btn-light upload-img">Загрузить</button><br>
+              <div class="cards">  
+                <div class="card">
+                  <img src="images/news-3.png">
+                  <p class="pic-name">Название.jpg</p>
+                  <p class="pic-size">42.50 KB</p>
+                </div>
+                <div class="card">
+                  <img src="images/A_sledcov-profile.png">
+                  <p class="pic-name">Название.jpg</p>
+                  <p class="pic-size">42.50 KB</p>
+                </div>
+                <div class="card">
+                  <img src="images/news-1.png">
+                  <p class="pic-name">Название.jpg</p>
+                  <p class="pic-size">42.50 KB</p>
+                </div>
+                <div class="card">
+                  <img src="images/news-2.png">
+                  <p class="pic-name">Название.jpg</p>
+                  <p class="pic-size">42.50 KB</p>
+                </div>
+                <div class="card">
+                  <img src="images/news-3.png">
+                  <p class="pic-name">Название.jpg</p>
+                  <p class="pic-size">42.50 KB</p>
+                </div>
+              </div>
+              <div class="cards">
+                <div class="card">
+                  <img src="images/news-3.png">
+                  <p class="pic-name">Название.jpg</p>
+                  <p class="pic-size">42.50 KB</p>
+                </div>
+                <div class="card">
+                  <img src="images/A_sledcov-profile.png">
+                  <p class="pic-name">Название.jpg</p>
+                  <p class="pic-size">42.50 KB</p>
+                </div>
+                <div class="card">
+                  <img src="images/news-1.png">
+                  <p class="pic-name">Название.jpg</p>
+                  <p class="pic-size">42.50 KB</p>
+                </div>
+                <div class="card">
+                  <img src="images/news-2.png">
+                  <p class="pic-name">Название.jpg</p>
+                  <p class="pic-size">42.50 KB</p>
+                </div>
+                <div class="card">
+                  <img src="images/news-3.png">
+                  <p class="pic-name">Название.jpg</p>
+                  <p class="pic-size">42.50 KB</p>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="tab-pane fade" id="nav-youtube" role="tabpanel" aria-labelledby="nav-youtube-tab">
+            <div class="form-group row youtube">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">YouTube</label>
+              <div class="col-sm-4">
+                <input type="url" class="form-control">
+              </div>
+              <small>(Необходимо вставить ссылку с YouTube)</small>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-model" role="tabpanel" aria-labelledby="nav-model-tab">
+            <div class="form-group row youtube">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">3D модель</label>
+              <div class="col-sm-3">
+                <input type="url" class="form-control">
+              </div>
+              <small>(Необходимо вставить ссылку со sketchfab.com. Если ссылка не указана, то автоматически<br> подставляется первая фотография из фотогалереи)</small>
+            </div>  
+          </div>
+        </div>                
+        <p class="warning">Вы не загрузили фотографии в фотогалерею</p>                
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-eng-tab" data-toggle="tab" href="#nav-eng" role="tab" aria-controls="nav-eng" aria-selected="true">Eng<span class="red">*</span></a>
+            <a class="nav-item nav-link" id="nav-ru-tab" data-toggle="tab" href="#nav-ru" role="tab" aria-controls="nav-ru" aria-selected="false">Ru<span class="red">*</span></a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active " id="nav-eng" role="tabpanel" aria-labelledby="nav-eng-tab">
+            <div id="block6">
+              <form>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-3 col-form-label">Заголовок страницы<span class="red">*</span></label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-3 col-form-label">Полное название проекта<span class="red">*</span></label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-3 col-form-label">Текст<span class="red">*</span></label>
+                  <div class="col-sm-7">
+                    <textarea></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-3 col-form-label">Скульптор</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-3 col-form-label">Автор идеи</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-3 col-form-label">Место установки</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-3 col-form-label">Материал</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </form>
+            </div>               
+            <div class="tab-pane fade" id="nav-ru" role="tabpanel" aria-labelledby="nav-ru-tab">
+
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="button" class="btn btn-primary">Сохранить</button>
+          <button type="button" class="btn btn-light">Отменить</button>
+        </div>
+      </form>            
+    </div>  
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:"textarea"});</script>  
+    </body>
+</html>
