@@ -51,8 +51,8 @@
     <div class="body">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-          <li class="breadcrumb-item"><a href="#">Проекты</a></li>
+          <li class="breadcrumb-item "><a href="#" class="black"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li class="breadcrumb-item "><a href="#" class="black">Проекты</a></li>
           <li class="breadcrumb-item active" aria-current="page">Добавить</li>
         </ol>
       </nav>
@@ -64,11 +64,11 @@
             <select class="form-control form-control col-sm-10 vmeste">
               <option>Выберите из списка</option>
             </select> 
-            <button class="col-sm-1 vmeste plus"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="col-sm-3 vmeste plus"><span class="glyphicon glyphicon-plus"></span></button>
           </div>
         </div>
         <div class="form-group row">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Ссылка<span class="red">*</span></label>
+          <label class="col-sm-2 col-form-label">Ссылка<span class="red">*</span></label>
           <div class="col-sm-4">
             <input type="url" class="form-control">
           </div>
@@ -80,7 +80,7 @@
             <select class="form-control form-control col-sm-10 vmeste">
               <option>Выберите из списка</option>
             </select>   
-            <button class="col-sm-1 vmeste plus"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="col-sm-3 vmeste plus"><span class="glyphicon glyphicon-plus"></span></button>
           </div>
           <small>(Мета-данные страницы для поисковых систем)</small>
         </div>
@@ -90,7 +90,7 @@
             <select class="form-control form-control col-sm-10 vmeste">
               <option>Выберите из списка</option>
             </select>    
-            <button class="col-sm-1 vmeste plus"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="col-sm-3 vmeste plus"><span class="glyphicon glyphicon-plus"></span></button>
           </div>
           <small>(Используются для удобной фильтрации проектов.<br> Можно выбрать не более 3 шт.)</small>
         </div>
@@ -110,15 +110,15 @@
           <label for="inputEmail3" class="col-sm-2 col-form-label">Высота</label>
           <div class="form-group col-md-2">
             <label>Без постамента</label>
-            <input type="number" class="form-control col-md-8">
-            <select class="form-control form-control-sm col-md-4">
+            <input type="number" class="form-control col-md-7 vmeste">
+            <select class="form-control form-control col-md-4 vmeste">
               <option>M</option>
             </select> 
           </div>
           <div class="form-group col-md-2">
             <label>С постаментом</label>
-            <input type="number" class="form-control col-md-8">
-            <select class="form-control form-control-sm col-md-4">
+            <input type="number" class="form-control col-md-7 vmeste">
+            <select class="form-control form-control col-md-4 vmeste">
               <option>M</option>
             </select>
           </div>
@@ -134,10 +134,10 @@
         </div>            
         <nav>
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-pic-tab" data-toggle="tab" href="#nav-pic" role="tab" aria-controls="nav-pic" aria-selected="true">Изображения<span class="red">*</span></a>
-            <a class="nav-item nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="nav-gallery" aria-selected="false">Фотогалерея<span class="red">*</span></a>
-            <a class="nav-item nav-link" id="nav-youtube-tab" data-toggle="tab" href="#nav-youtube" role="tab" aria-controls="nav-youtube" aria-selected="false">YouTube</a>
-            <a class="nav-item nav-link" id="nav-model-tab" data-toggle="tab" href="#nav-model" role="tab" aria-controls="nav-model" aria-selected="false">3D модель</a>
+            <a class="nav-item nav-link active black" id="nav-pic-tab" data-toggle="tab" href="#nav-pic" role="tab" aria-controls="nav-pic" aria-selected="true">Изображения<span class="red">*</span></a>
+            <a class="nav-item nav-link black" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="nav-gallery" aria-selected="false">Фотогалерея<span class="red">*</span></a>
+            <a class="nav-item nav-link black" id="nav-youtube-tab" data-toggle="tab" href="#nav-youtube" role="tab" aria-controls="nav-youtube" aria-selected="false">YouTube</a>
+            <a class="nav-item nav-link black" id="nav-model-tab" data-toggle="tab" href="#nav-model" role="tab" aria-controls="nav-model" aria-selected="false">3D модель</a>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
@@ -146,9 +146,11 @@
               <div class="block1 border-right">
                 <label>Основная фотография проекта</label>
                 <button type="button" class="btn btn-light upload-img">Загрузить</button><br>
-                <img src="images/IMG_4880-05-03-18-07-11.png">
-                <div class="circle">
-                  <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png">
+                <div class="image">
+                  <img src="images/IMG_4880-05-03-18-07-11.png">
+                  <div class="circle block1-circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                 </div>
                 <p class="pic-name"> Название.jpg</p>
                 <p class="pic-size">42.50 KB</p>
@@ -156,9 +158,11 @@
               <div class="block2">
                 <label>Миниатюра проекта</label>
                 <button type="button" class="btn btn-light upload-img">Загрузить</button><br>
-                <img src="images/siluet_grozniy.png">
-                <div class="circle">
-                  <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png">
+                <div class="image">
+                  <img src="images/siluet_grozniy.png">
+                  <div class="circle block1-circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png" class="bin">
+                  </div>
                 </div>
                 <p class="pic-name"> Название.jpg</p>
                 <p class="pic-size">42.50 KB</p>
@@ -167,31 +171,48 @@
           </div>
           <div class="tab-pane fade" id="nav-gallery" role="tabpanel" aria-labelledby="nav-gallery-tab">
             <div class="block3">
-              <label>Загрузить не менее 5 шт. <span class="red">*</span></label>
-              <button type="button" class="btn btn-light upload-img">Загрузить</button><br>
-              <div class="cards">  
+              <div class="block3-label">
+                <label>Загрузить не менее 5 шт. <span class="red">*</span></label>
+                <button type="button" class="btn btn-light upload-img">Загрузить</button><br>
+              </div>
+                <div class="cards">  
                 <div class="card">
                   <img src="images/news-3.png">
+                  <div class="circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                   <p class="pic-name">Название.jpg</p>
                   <p class="pic-size">42.50 KB</p>
                 </div>
                 <div class="card">
                   <img src="images/A_sledcov-profile.png">
+                  <div class="circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                   <p class="pic-name">Название.jpg</p>
                   <p class="pic-size">42.50 KB</p>
                 </div>
                 <div class="card">
                   <img src="images/news-1.png">
+                  <div class="circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                   <p class="pic-name">Название.jpg</p>
                   <p class="pic-size">42.50 KB</p>
                 </div>
                 <div class="card">
                   <img src="images/news-2.png">
+                  <div class="circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                   <p class="pic-name">Название.jpg</p>
                   <p class="pic-size">42.50 KB</p>
                 </div>
                 <div class="card">
                   <img src="images/news-3.png">
+                  <div class="circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                   <p class="pic-name">Название.jpg</p>
                   <p class="pic-size">42.50 KB</p>
                 </div>
@@ -199,26 +220,41 @@
               <div class="cards">
                 <div class="card">
                   <img src="images/news-3.png">
+                  <div class="circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                   <p class="pic-name">Название.jpg</p>
                   <p class="pic-size">42.50 KB</p>
                 </div>
                 <div class="card">
                   <img src="images/A_sledcov-profile.png">
+                  <div class="circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                   <p class="pic-name">Название.jpg</p>
                   <p class="pic-size">42.50 KB</p>
                 </div>
                 <div class="card">
                   <img src="images/news-1.png">
+                  <div class="circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                   <p class="pic-name">Название.jpg</p>
                   <p class="pic-size">42.50 KB</p>
                 </div>
                 <div class="card">
                   <img src="images/news-2.png">
+                  <div class="circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                   <p class="pic-name">Название.jpg</p>
                   <p class="pic-size">42.50 KB</p>
                 </div>
                 <div class="card">
                   <img src="images/news-3.png">
+                  <div class="circle">
+                    <img src="images/NoPath%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png " class="bin">
+                  </div>
                   <p class="pic-name">Название.jpg</p>
                   <p class="pic-size">42.50 KB</p>
                 </div>
