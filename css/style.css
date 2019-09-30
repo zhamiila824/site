@@ -51,15 +51,38 @@ input{
 }
 .plus{
     height: 35px;
-    width: 44px;
+    width: 55px;
     margin-left: 3px; 
+    text-align: center;
+    align-items: center;
+    float: right;
 }
+.measure{
+    width: 120px;
+}
+.height{
+    float: right;
+}
+.glyphicon-plus{
+    font-size: 20px;
+}
+[type="date"] {
+    background:#fff url("../images/Group\ 36.svg")  97% 50% no-repeat ;
+  }
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
 small{
     text-align: left;
     font: Italic 14px/19px Roboto;
     letter-spacing: 0;
     color: #000000;
-    align-items: center;
+}
+.small{
+    padding-top: 45px;
 }
 label{
     text-align: left;
@@ -115,6 +138,8 @@ label{
 }
 .buttons{
     margin: 25px 0 70px 10px;
+    width: 211px;
+    height: 40px;
 }
 .youtube{
     padding: 50px;
@@ -131,4 +156,9 @@ label{
 #nav-tab > .active{
     background-color: #F4F4F4;
     color: #000;
+    border-bottom: none;
+}
+textarea{
+    width: 745px;
+    height: 313px;
 }
