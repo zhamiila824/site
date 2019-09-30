@@ -163,3 +163,6 @@ textarea{
     width: 745px;
     height: 313px;
 }
+label.col-sm-12{
+    margin-left: -15px;
+}
